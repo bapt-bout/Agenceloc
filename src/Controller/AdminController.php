@@ -52,7 +52,7 @@ class AdminController extends AbstractController
             $article->setCreatedAt(new \DateTime);
             $manager->persist($article);
             $manager->flush();
-            $this->addFlash('success', "L'article a bien été ajouté");
+            $this->addFlash('success', "Le vehicule a bien été ajouté");
             return $this->redirectToRoute('admin_article');
 
         }
@@ -69,7 +69,7 @@ class AdminController extends AbstractController
     {
         $manager->remove($article);
         $manager->flush();
-        $this->addFlash("success", "l'article a bien été supprimé");
+        $this->addFlash("success", "le vehicule a bien été supprimé");
         return $this->redirectToRoute('admin_article');
     }
 }

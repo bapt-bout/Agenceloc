@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 
-{% block title %}Article{% endblock %}
+{% block title %}Vehicule{% endblock %}
 
 
 {% block body %}
@@ -24,31 +24,31 @@
 
     <div class="container my-3">
         {% if app.user %}
-        <h2 class="text-center">Ajouter un Commentaire</h2>
+        <h2 class="text-center">Ajouter une description</h2>
         {{form_start(commentForm)}}
         
         {{form_row(commentForm.content,{
-            label : 'Votre commentaire'
+            label : 'Votre description'
         })}}
         <button type="submit" class="btn btn-info">Envoyer</button>
         
         {{form_end(commentForm)}}
         {% else %}
 
-            <p class="text-center h5">Pour ajouter un commentaire, <a href="{{ path('app_login') }}">Connectez-vous</a></p>
+            <p class="text-center h5">Pour ajouter une description, <a href="{{ path('app_login') }}">Connectez-vous</a></p>
             
         {% endif %}
     </div>
 
     <div class="container my-4">
-        <h2 class="text-center">Commentaires</h2>
+        <h2 class="text-center">Description</h2>
         
         <section>
             <table class="table table-secondary">
                 <thead>
                     <tr>
-                        <th class="col-md-3">Auteur/Date</th>
-                        <th class="col-md-9">Commentaires</th>
+                        <th class="col-md-3">Date</th>
+                        <th class="col-md-9">Description</th>
                     </tr>
                 </thead>
                 <tbody>

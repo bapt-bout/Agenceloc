@@ -1,14 +1,14 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Article{% endblock %}
+{% block title %}Vehicule{% endblock %}
 
 {% block body %}
 
 
     {% if 'editMode' %}
-	    <h1 class="text-center my-3">Modifier Article</h1>
+	    <h1 class="text-center my-3">Modifier Vehicule</h1>
     {% else %}
-	    <h1 class="text-center my-3">Ajouter Article</h1>
+	    <h1 class="text-center my-3">Ajouter vehicule</h1>
     {% endif %}
     
 
@@ -28,7 +28,7 @@
 	{{ form_row(form.content, {
         label: 'Contenu',
         attr: {
-            placeholder: "contenu de l'article"
+            placeholder: "contenu de l'vehicule"
         }
     }) }}
 

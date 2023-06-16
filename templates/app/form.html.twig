@@ -4,9 +4,9 @@
 
 <h1 class="text-center">
 {% if editMode %}
-    Modification de l'article
+    Modification du vehicule
 {% else %}
-    Création d'un article
+    Création d'un vehicule
 {% endif %}
 </h1>
 
@@ -23,7 +23,7 @@
 {{form_row(formArticle.content, {
     label: "Contenu",
     attr: {
-        placeholder: "contenu de l'article"
+        placeholder: "contenu du vehicule"
     }
 })}}
 {{form_row(formArticle.image)}}
@@ -32,7 +32,7 @@
 {% if editMode %}
     Enregistrer les modifications
 {% else %}
-    Ajouter l'article
+    Ajouter le Vehicule
 {% endif %}
 </button>
 

@@ -3,7 +3,7 @@
 {% extends "base.html.twig" %}
 
 {% block title %}
-    Gestion des articles
+    Gestion des vehicules
 {% endblock title %}
 
 {% block body %}
@@ -12,16 +12,16 @@
 {% endfor %}
 
     <div class="container">
-        <div class="text-center my-4 h1">Gestion des articles</div>
+        <div class="text-center my-4 h1">Gestion des vehicules</div>
         
-        <a href=" {{ path('admin_article_new') }} " class ="btn btn-info mb-3">Ajouter un article</a>
+        <a href=" {{ path('admin_article_new') }} " class ="btn btn-info mb-3">Ajouter un vehicule</a>
         <table class="table table-dark">
             <thead>
                 <tr>
                     {% for data in colonnes %}
                         <th>{{ data }}</th>                        
                     {% endfor %}
-                    <th>Category</th>
+                    <th>description</th>
                     <th>Option</th>
                 </tr>
             </thead>
